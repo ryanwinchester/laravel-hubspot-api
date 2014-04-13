@@ -2,7 +2,8 @@
 
 return array(
 		
-	'key' => 'hubspot_api_key',
+	// HubSpot API Key
+	'key' => 'demo',
 
 	'useragent' => 'Default_user_agent',
 
