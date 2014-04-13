@@ -1,4 +1,4 @@
-laravel-hubspot-api
+Easy to use HubSpot API in Laravel 4
 ===================
 
 PHP HubSpot API wrapper for Laravel 4
