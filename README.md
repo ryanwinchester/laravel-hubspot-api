@@ -1,7 +1,7 @@
 Easy to use HubSpot API in Laravel 4
 ===================
 
-PHP HubSpot API wrapper for Laravel 4
+PHP HubSpot API package for [Laravel 4](http://laravel.com/)
 
 Most of the code is from [HubSpot/haPiHP](https://github.com/HubSpot/haPiHP).
 
