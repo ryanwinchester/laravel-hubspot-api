@@ -7,11 +7,14 @@ Most of the code is from [HubSpot/haPiHP](https://github.com/HubSpot/haPiHP).
 
 ## Setup
 
+In composer.json:
+
 ```
 "require": {
-	"fungku/hubspot": "dev-master"
+	"fungku/hubspot": "dev-master",
 }
 ```
+then run `composer install` or `composer update`
 
 Open `app/config/app.php` and add this to the providers array:
 
