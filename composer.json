@@ -1,6 +1,7 @@
 {
     "name": "fungku/hubspot",
     "description": "PHP HubSpot API wrapper for Laravel 4",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Fungku",

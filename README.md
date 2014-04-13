@@ -3,7 +3,7 @@ laravel-hubspot-api
 
 PHP HubSpot API wrapper for Laravel 4
 
-Uses [HubSpot/haPiHP](https://github.com/HubSpot/haPiHP)
+Most of the code is from [HubSpot/haPiHP](https://github.com/HubSpot/haPiHP).
 
 ## Setup
 
