@@ -7,6 +7,12 @@ Most of the code is from [HubSpot/haPiHP](https://github.com/HubSpot/haPiHP).
 
 ## Setup
 
+```
+"require": {
+	"fungku/hubspot": "dev-master"
+}
+```
+
 Put your HubSpot API key in `src/config/api.php`
 
 ## Examples
