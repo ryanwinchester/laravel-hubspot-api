@@ -13,6 +13,12 @@ Most of the code is from [HubSpot/haPiHP](https://github.com/HubSpot/haPiHP).
 }
 ```
 
+Open `app/config/app.php` and add this to the providers array:
+
+```
+'Fungku\HubSpotServiceProvider',
+```
+
 Put your HubSpot API key in `src/config/api.php`
 
 ## Examples
