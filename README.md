@@ -11,7 +11,7 @@ In composer.json:
 
 ```
 "require": {
-	"fungku/hubspot": "dev-master",
+	"fungku/hubspot": "dev-master"
 }
 ```
 then run `composer install` or `composer update`
@@ -19,7 +19,7 @@ then run `composer install` or `composer update`
 Open `app/config/app.php` and add this to the providers array:
 
 ```
-'Fungku\HubSpotServiceProvider',
+'Fungku\HubSpot\HubSpotServiceProvider',
 ```
 
 Put your HubSpot API key in `src/config/api.php`
