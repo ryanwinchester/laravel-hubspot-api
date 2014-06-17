@@ -22,7 +22,7 @@ Open `app/config/app.php` and add this to the providers array:
 'Fungku\HubSpot\HubSpotServiceProvider',
 ```
 
-Put your HubSpot API key in `src/config/api.php`
+Put your HubSpot API key in `/vendor/fungku/hubspot/src/config/api.php`
 
 ## Examples
 
