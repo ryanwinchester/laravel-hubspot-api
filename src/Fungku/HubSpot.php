@@ -1,6 +1,6 @@
 <?php
 
-namespace Fungku\HubSpot;
+namespace Fungku;
 
 use Fungku\HubSpot\API\Blog;
 use Fungku\HubSpot\API\Contacts;
