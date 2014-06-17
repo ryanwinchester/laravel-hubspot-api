@@ -11,7 +11,7 @@ In composer.json:
 
 ```
 "require": {
-	"fungku/hubspot": "dev-master"
+	"fungku/laravel-hubspot": "dev-master"
 }
 ```
 then run `composer install` or `composer update`
