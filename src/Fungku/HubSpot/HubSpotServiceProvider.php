@@ -33,7 +33,10 @@ class HubSpotServiceProvider extends ServiceProvider {
 		// Register 'hubspot' instance container to our HubSpot object
         $this->app['hubspot'] = $this->app->share(function($app)
         {
-            return new \Fungku\HubSpot;
+            return new \Fungku\HubSpot(
+                \Config::get('laravel-hubspot::api.key'),
+                \Config::get('laravel-hubspot::api.useragent')
+            );
         });
 
         // Shortcut so developers don't need to add an Alias in app/config/app.php

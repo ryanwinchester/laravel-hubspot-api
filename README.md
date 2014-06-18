@@ -21,10 +21,10 @@ Open `app/config/app.php` and add this to the providers array:
 ```
 'Fungku\HubSpot\HubSpotServiceProvider',
 ```
+To set you API key, the two easiest ways are to either:
 
-Put your HubSpot API key in `/vendor/fungku/hubspot/src/config/api.php`
-
-or set an environment variable `HUBSPOT_APIKEY`
+1. Put your HubSpot API key in `/vendor/fungku/laravel-hubspot/src/config/api.php`
+2. Set an environment variable `HUBSPOT_APIKEY`
 
 ## Examples
 
