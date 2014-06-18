@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "fungku/hubspot": "0.9",
+        "fungku/hubspot": "0.9.*",
         "illuminate/support": "4.1.*"
     },
     "autoload": {
