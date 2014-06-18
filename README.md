@@ -11,7 +11,7 @@ In composer.json:
 
 ```
 "require": {
-	"fungku/laravel-hubspot": "dev-master"
+	"fungku/laravel-hubspot": "1.1.*"
 }
 ```
 then run `composer install` or `composer update`
@@ -24,6 +24,8 @@ Open `app/config/app.php` and add this to the providers array:
 
 Put your HubSpot API key in `/vendor/fungku/hubspot/src/config/api.php`
 
+or set an environment variable `HUBSPOT_APIKEY`
+
 ## Examples
 
 ### Contacts:
@@ -32,10 +34,10 @@ Put your HubSpot API key in `/vendor/fungku/hubspot/src/config/api.php`
 $contacts = HubSpot::contacts();
 
 // Get 100 contacts
-$contacts->all(array('count'=>100));
+$contacts->get_all_contacts(array('count'=>100));
 
 // Get a contact by email address
-$contacts->findByEmail('example@somedomain.com');
+$contacts->get_contact_by_email('example@somedomain.com');
 ```
 
 ### Lists
@@ -44,5 +46,5 @@ $contacts->findByEmail('example@somedomain.com');
 $lists = HubSpot::lists();
 
 // Get 20 lists
-$lists->all(array('count'=>20));
+$lists->get_lists(array('count'=>20));
 ```
