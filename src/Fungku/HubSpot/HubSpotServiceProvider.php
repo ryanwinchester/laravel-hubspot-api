@@ -1,6 +1,7 @@
 <?php namespace Fungku\HubSpot;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Foundation\AliasLoader;
 
 class HubSpotServiceProvider extends ServiceProvider {
 
@@ -18,7 +19,8 @@ class HubSpotServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('fungku/hubspot');
+        $this->package('fungku/hubspot');
+        $this->package('fungku/laravel-hubspot');
 	}
 
 	/**
@@ -31,13 +33,13 @@ class HubSpotServiceProvider extends ServiceProvider {
 		// Register 'hubspot' instance container to our HubSpot object
         $this->app['hubspot'] = $this->app->share(function($app)
         {
-            return new HubSpot;
+            return new \Fungku\HubSpot;
         });
 
         // Shortcut so developers don't need to add an Alias in app/config/app.php
         $this->app->booting(function()
         {
-            $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+            $loader = AliasLoader::getInstance();
             $loader->alias('HubSpot', 'Fungku\HubSpot\Facades\HubSpot');
         });
 	}
