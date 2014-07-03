@@ -1,6 +1,8 @@
 Easy to use HubSpot API in Laravel 4
 ===================
 
+[![Latest Stable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/stable.svg)](https://packagist.org/packages/fungku/laravel-hubspot) [![Total Downloads](https://poser.pugx.org/fungku/laravel-hubspot/downloads.svg)](https://packagist.org/packages/fungku/laravel-hubspot) [![Latest Unstable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/unstable.svg)](https://packagist.org/packages/fungku/laravel-hubspot) [![License](https://poser.pugx.org/fungku/laravel-hubspot/license.svg)](https://packagist.org/packages/fungku/laravel-hubspot)
+
 PHP HubSpot API package for [Laravel 4](http://laravel.com/)
 
 Most of the hard-working code is modified classes from [HubSpot/haPiHP](https://github.com/HubSpot/haPiHP).
