@@ -58,3 +58,8 @@ $lists = HubSpot::lists();
 // Get 20 lists
 $lists->get_lists(array('count'=>20));
 ```
+
+## Known Issues
+
+- The config file isn't used. Should fix it this week. Use an environment variable instead... (it's probably better to do that anyway)
+
