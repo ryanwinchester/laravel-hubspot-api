@@ -23,11 +23,14 @@ Open `app/config/app.php` and add this to the providers array:
 ```
 
 TO SET YOUR API KEY:
-Run the following command: $ php artisan config:publish fungku/laravel-hubspot
+
+Run the following command: `$ php artisan config:publish fungku/laravel-hubspot`
 
 This will generate a config file to: app/config/packages/fungku/laravel-hubspot/api.php
 
 You can then update this file with your api key from HubSpot and set the user agent.
+
+You could also set an environment variable, `HUBSPOT_APIKEY`
 
 
 
