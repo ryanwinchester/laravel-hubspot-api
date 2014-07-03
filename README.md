@@ -32,7 +32,7 @@ This will generate a config file to: `app/config/packages/fungku/laravel-hubspot
 
 You can then update this file with your api key from HubSpot and set the user agent.
 
-You could also set an environment variable, `HUBSPOT_APIKEY`
+You could also [set an environment variable](http://laravel.com/docs/configuration#protecting-sensitive-configuration) called, `HUBSPOT_APIKEY`
 
 
 
