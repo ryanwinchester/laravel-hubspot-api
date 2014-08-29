@@ -1,7 +1,9 @@
 Easy to use HubSpot API in Laravel 4
 ===================
 
-[![Latest Stable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/stable.svg)](https://packagist.org/packages/fungku/laravel-hubspot) [![Total Downloads](https://poser.pugx.org/fungku/laravel-hubspot/downloads.svg)](https://packagist.org/packages/fungku/laravel-hubspot) [![Latest Unstable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/unstable.svg)](https://packagist.org/packages/fungku/laravel-hubspot) [![License](https://poser.pugx.org/fungku/laravel-hubspot/license.svg)](https://packagist.org/packages/fungku/laravel-hubspot)
+[![Latest Stable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/stable.svg)](https://packagist.org/packages/fungku/laravel-hubspot) [![Total Downloads](https://poser.pugx.org/fungku/laravel-hubspot/downloads.svg)](https://packagist.org/packages/fungku/laravel-hubspot) [![Latest Unstable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/unstable.svg)](https://packagist.org/packages/fungku/laravel-hubspot)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fungku/laravel-hubspot-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fungku/laravel-hubspot-api/?branch=master)
+[![License](https://poser.pugx.org/fungku/laravel-hubspot/license.svg)](https://packagist.org/packages/fungku/laravel-hubspot)
 
 PHP HubSpot API package for [Laravel 4](http://laravel.com/)
 
