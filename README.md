@@ -1,41 +1,59 @@
-Easy to use HubSpot API in Laravel 4
+Easy to use Hubspot API in Laravel 4
 ===================
 
-[![Latest Stable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/stable.svg)](https://packagist.org/packages/fungku/laravel-hubspot) [![Total Downloads](https://poser.pugx.org/fungku/laravel-hubspot/downloads.svg)](https://packagist.org/packages/fungku/laravel-hubspot) [![Latest Unstable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/unstable.svg)](https://packagist.org/packages/fungku/laravel-hubspot)
+[![Latest Stable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/stable.svg)](https://packagist.org/packages/fungku/laravel-hubspot)
+[![Total Downloads](https://poser.pugx.org/fungku/laravel-hubspot/downloads.svg)](https://packagist.org/packages/fungku/laravel-hubspot)
+[![Latest Unstable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/unstable.svg)](https://packagist.org/packages/fungku/laravel-hubspot)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fungku/laravel-hubspot-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fungku/laravel-hubspot-api/?branch=master)
 [![License](https://poser.pugx.org/fungku/laravel-hubspot/license.svg)](https://packagist.org/packages/fungku/laravel-hubspot)
 
-PHP HubSpot API package for [Laravel 4](http://laravel.com/)
-
-Most of the hard-working code is modified classes from [HubSpot/haPiHP](https://github.com/HubSpot/haPiHP).
+PHP Hubspot API package for [Laravel 5.1](http://laravel.com/)
 
 ## Setup
 
 In composer.json:
 
-```
+```json
 "require": {
-	"fungku/laravel-hubspot": "1.1.*"
+	"fungku/laravel-hubspot": "dev-develop@dev"
 }
 ```
+
 then run `composer install` or `composer update`
 
-Open `app/config/app.php` and add this to the providers array:
+Open `app/config/app.php` and add this to the **providers** array:
 
 ```
-'Fungku\HubSpot\HubSpotServiceProvider',
+Fungku\Hubspot\HubspotServiceProvider::class,
+```
+
+and this to your **aliases** array:
+
+```
+Fungku\Hubspot\Facades\Hubspot::class,
 ```
 
 TO SET YOUR API KEY:
 
-Run the following command: `$ php artisan config:publish fungku/laravel-hubspot`
+Add you rapi key to the .env file like: 
 
-This will generate a config file to: `app/config/packages/fungku/laravel-hubspot/api.php`
+```
+HUBSPOT_API_KEY=my-api-key
+```
 
-You can then update this file with your api key from HubSpot and set the user agent.
+OR
 
-You could also [set an environment variable](http://laravel.com/docs/configuration#protecting-sensitive-configuration) called, `HUBSPOT_APIKEY`
+Run the following command:
 
+```bash
+
+php artisan config:publish fungku/laravel-hubspot
+
+```
+
+This will generate a config file to: `config/hubspot.php`
+
+You can then update this file with your api key from Hubspot.
 
 
 ## Examples
@@ -43,21 +61,25 @@ You could also [set an environment variable](http://laravel.com/docs/configurati
 ### Contacts:
 
 ```php
-$contacts = HubSpot::contacts();
 
 // Get 100 contacts
-$contacts->get_all_contacts(array('count'=>100));
+$contacts = Hubspot::contacts()->all([
+	'count' => 100
+]);
 
 // Get a contact by email address
-$contacts->get_contact_by_email('example@somedomain.com');
+$contact = Hubspot::contacts()->getByEmail('example@somedomain.com');
+
 ```
 
 ### Lists
 
 ```php
-$lists = HubSpot::lists();
 
 // Get 20 lists
-$lists->get_lists(array('count'=>20));
+$lists = Hubspot::lists()->all([
+	'count'=>20
+]);
+
 ```
 

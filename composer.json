@@ -9,14 +9,12 @@
         }
     ],
     "require": {
-        "fungku/hubspot": "1.0.*"
+        "fungku/hubspot-php": "0.9.*@dev",
+        "illuminate/support": "5.1.*"
     },
     "autoload": {
-        "classmap": [
-            "src/migrations"
-        ],
-        "psr-0": {
-            "Fungku\\HubSpot\\": "src/"
+        "psr-4": {
+            "Fungku\\Hubspot\\": "src/"
         }
     },
     "minimum-stability": "stable"
