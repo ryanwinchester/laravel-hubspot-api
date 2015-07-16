@@ -21,7 +21,7 @@ In composer.json:
 
 then run `composer install` or `composer update`
 
-Open `app/config/app.php` and add this to the **providers** array:
+Open `config/app.php` and add this to the **providers** array:
 
 ```
 Fungku\Hubspot\HubspotServiceProvider::class,
