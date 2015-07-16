@@ -46,9 +46,7 @@ OR
 Run the following command:
 
 ```bash
-
 php artisan config:publish fungku/laravel-hubspot
-
 ```
 
 This will generate a config file to: `config/hubspot.php`
@@ -61,7 +59,6 @@ You can then update this file with your api key from Hubspot.
 ### Contacts:
 
 ```php
-
 // Get 100 contacts
 $contacts = Hubspot::contacts()->all([
 	'count' => 100
@@ -75,7 +72,6 @@ $contact = Hubspot::contacts()->getByEmail('example@somedomain.com');
 ### Lists
 
 ```php
-
 // Get 20 lists
 $lists = Hubspot::lists()->all([
 	'count'=>20
