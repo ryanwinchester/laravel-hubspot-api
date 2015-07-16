@@ -1,4 +1,4 @@
-Easy to use Hubspot API in Laravel 4
+Easy to use Hubspot API for Laravel 5.1
 ===================
 
 [![Latest Stable Version](https://poser.pugx.org/fungku/laravel-hubspot/v/stable.svg)](https://packagist.org/packages/fungku/laravel-hubspot)
