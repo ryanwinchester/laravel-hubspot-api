@@ -74,7 +74,7 @@ $contact = Hubspot::contacts()->getByEmail('example@somedomain.com');
 ```php
 // Get 20 lists
 $lists = Hubspot::lists()->all([
-	'count'=>20
+	'count' => 20
 ]);
 
 ```
