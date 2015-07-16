@@ -20,6 +20,7 @@ class HubspotServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Allow users to publish config to override the defaults.
         $this->publishes([
             __DIR__.'/../config/hubspot.php' => config_path('hubspot.php'),
         ]);
@@ -32,6 +33,11 @@ class HubspotServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // Use the provided config as default.
+        $this->mergeConfigFrom(
+            __DIR__.'/../config/hubspot.php', 'hubspot'
+        );
+
         // Register 'hubspot' instance container to our HubSpot object
         $this->app->singleton('hubspot', function ($app) {
             $apiKey = $app['config']->get('hubspot.key');
