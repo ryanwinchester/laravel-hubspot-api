@@ -35,23 +35,21 @@ Fungku\Hubspot\Facades\Hubspot::class,
 
 TO SET YOUR API KEY:
 
-Add you rapi key to the .env file like: 
+Add your api key to the `.env` file like: 
 
 ```
 HUBSPOT_API_KEY=my-api-key
 ```
 
-OR
-
-Run the following command:
+Publish the config file to edit it:
 
 ```bash
-php artisan config:publish fungku/laravel-hubspot
+php artisan vendor:publish
 ```
 
 This will generate a config file to: `config/hubspot.php`
 
-You can then update this file with your api key from Hubspot.
+You can then update this file with your api key from Hubspot or use the `.env` file.
 
 
 ## Examples
