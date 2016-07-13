@@ -59,7 +59,7 @@ You can then update this file with your api key from Hubspot or use the `.env` f
 ```php
 // Get 100 contacts
 $contacts = Hubspot::contacts()->all([
-	'count' => 100
+    'count' => 100
 ]);
 
 // Get a contact by email address
@@ -72,8 +72,11 @@ $contact = Hubspot::contacts()->getByEmail('example@somedomain.com');
 ```php
 // Get 20 lists
 $lists = Hubspot::lists()->all([
-	'count' => 20
+    'count' => 20
 ]);
 
 ```
 
+## Documentation
+
+This package is a wrapper for the [ryanwinchester/hubspot-php](https://github.com/ryanwinchester/hubspot-php) package. So to see a list of all available methods, checkout the the original project.
