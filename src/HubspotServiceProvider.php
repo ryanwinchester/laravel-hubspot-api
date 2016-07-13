@@ -1,6 +1,7 @@
 <?php namespace SevenShores\Hubspot;
 
 use Illuminate\Support\ServiceProvider;
+use SevenShores\Hubspot\Factory;
 
 class HubspotServiceProvider extends ServiceProvider
 {
@@ -41,7 +42,7 @@ class HubspotServiceProvider extends ServiceProvider
         $this->app->singleton('hubspot', function ($app) {
             $secret = $app['config']->get('hubspot.secret');
 
-            return SevenShores\Hubspot\Factory::create($secret);
+            return Factory::create($secret);
         });
     }
 

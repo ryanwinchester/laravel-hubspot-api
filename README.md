@@ -30,7 +30,7 @@ SevenShores\Hubspot\HubspotServiceProvider::class,
 and this to your **aliases** array:
 
 ```
-SevenShores\Hubspot\Facades\Hubspot::class,
+'Hubspot'   => SevenShores\Hubspot\Facades\Hubspot::class,
 ```
 
 TO SET YOUR API KEY:
@@ -38,7 +38,7 @@ TO SET YOUR API KEY:
 Add your api key to the `.env` file like:
 
 ```
-HUBSPOT_API_KEY=my-api-key
+HUBSPOT_SECRET=my-api-key
 ```
 
 Publish the config file to edit it:
