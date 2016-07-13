@@ -15,7 +15,7 @@ In composer.json:
 
 ```json
 "require": {
-	"ryanwinchester/laravel-hubspot-api": "dev-develop@dev"
+	"ryanwinchester/laravel-hubspot": "dev-develop@dev"
 }
 ```
 
