@@ -1,7 +1,7 @@
-<?php namespace Fungku\Hubspot;
+<?php namespace SevenShores\Hubspot;
 
-use Fungku\HubSpot\HubSpotService;
 use Illuminate\Support\ServiceProvider;
+use SevenShores\Hubspot\Factory;
 
 class HubspotServiceProvider extends ServiceProvider
 {
@@ -23,7 +23,7 @@ class HubspotServiceProvider extends ServiceProvider
         // Allow users to publish config to override the defaults.
         $this->publishes([
             __DIR__.'/../config/hubspot.php' => config_path('hubspot.php'),
-        ]);
+        ], 'ryanwinchester/laravel-hubspot');
     }
 
     /**
@@ -40,9 +40,9 @@ class HubspotServiceProvider extends ServiceProvider
 
         // Register 'hubspot' instance container to our HubSpot object
         $this->app->singleton('hubspot', function ($app) {
-            $apiKey = $app['config']->get('hubspot.key');
+            $secret = $app['config']->get('hubspot.secret');
 
-            return HubSpotService::make($apiKey);
+            return Factory::create($secret);
         });
     }
 

@@ -1,7 +1,7 @@
 <?php
 
 return array(
-    
+
     /*
     |--------------------------------------------------------------------------
     | HubSpot API Key
@@ -13,7 +13,5 @@ return array(
     | e.g. in .env.php in production or .env.local.php in local environment
     |
     */
-    
-    'key' => env('HUBSPOT_API_KEY'),
-
+    'key' => env('HUBSPOT_SECRET'),
 );
